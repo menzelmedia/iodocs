@@ -109,6 +109,7 @@ ul
                                                                         option(value=choice, selected=true) #{choice}
                                                                 - else
                                                                         option(value=choice) #{choice}
+                                                          input(type='hidden', name='locations['+parameter.Name+']', value=parameter.Location || 'query')
                                                       - else if (parameter.Type =='boolean')
                                                            select(name='params[' + parameter.Name + ']', placeholder=className)
                                                                 - if (parameter.Default =='')
